@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Raleway', sans-serif;
+}
+
+.header {
+  height: 400px;
+  width: 100vw;
+  background-color: #252730;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navItem {
+  color: #99CBC8;
+  padding: 25px;
+}
+
+.namelogo {
+  display: flex;
+  justify-content: center;
+}
+
+h2, .logoDiv {
+  padding-left: 30px;
+  padding-top: 50px;
+}
+
+.intro {
+  height: 400px;
+  width: 50%;
+  display: flex;
+}
+
+.work {
+  background-color: lightgrey;
+  height: 400px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.contact {
+  height: 200px;
+  width: 100vw;
+}
+
+.footer {
+  flex: 1 0 auto;
+  background-color: #252730;
+  color: #99CBC8;
+  height: 200px;
+  width: 100vw;
+  /*text-align: center;*/
+  padding-top: 10px;
+}
+
+.copy {
+  display: flex;
+  justify-content: center;
+  padding-top: 70px;
+}
+
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+
+  .work {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+
+ .interstings {
+   background-image: url('./media/interestings.png');
+   background-repeat: no-repeat;
+   height: 48%;
+   background-size: cover;
+   text-align: center;
+   padding-top: 50px;
+ }
+
+ /*.interstings:after {
+   opacity: 1;
+ }*/
+
+ .fable {
+   background-image: url('./media/fableforum.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 48%;
+   text-align: center;
+   padding-top: 50px;
+ }
+
+  .icon {
+    width: 30px;
+  }
+
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+
+  .work {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .interstings {
+    background-image: url('./media/interestings.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50%;
+  }
+
+  .fable {
+    background-image: url('./media/fableforum.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50%;
+  }
+  
+  .icon {
+    width: 30px;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+
+  .interstings {
+    background-image: url('./media/interestings.png');
+    background-repeat: no-repeat;
+  }
+
+}

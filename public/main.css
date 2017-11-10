@@ -31,6 +31,7 @@ ul {
 .namelogo {
   display: flex;
   justify-content: center;
+  padding-top: 75px;
 }
 
 h2, .logoDiv {
@@ -77,6 +78,8 @@ h2, .logoDiv {
 
 
 
+
+
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
 
@@ -86,31 +89,47 @@ h2, .logoDiv {
     justify-content: center;
  }
 
- .interstings {
+ .interestings {
    background-image: url('./media/interestings.png');
-   background-repeat: no-repeat;
-   height: 48%;
-   background-size: cover;
-   text-align: center;
-   padding-top: 50px;
  }
-
- /*.interstings:after {
-   opacity: 1;
- }*/
 
  .fable {
    background-image: url('./media/fableforum.png');
-   background-repeat: no-repeat;
-   background-size: cover;
-   height: 48%;
-   text-align: center;
-   padding-top: 50px;
  }
+
+ .interestings, .fable {
+   background-repeat: no-repeat;
+   background-size: contain;
+   width: 350px;
+   height: 200px;
+   text-align: center;
+   margin-top: 10px;
+   /*border: 2px solid blue;*/
+ }
+
+ .imageoverlay {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+   align-items: center;
+   padding-left: 10px;
+   padding-right: 10px;
+   width: 350px;
+   height: 178px;
+   background-color: rgba(181, 181, 181, 0.5);
+ }
+
 
   .icon {
     width: 30px;
   }
+
+  .icon:hover {
+    background-color: rgba(38, 40, 49, 0.5);
+    border-radius: 50%;
+  }
+
 
 }
 
@@ -122,31 +141,87 @@ h2, .logoDiv {
     flex-direction: column;
   }
 
-  .interstings {
+  .interestings {
     background-image: url('./media/interestings.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 50%;
   }
 
   .fable {
     background-image: url('./media/fableforum.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 50%;
   }
-  
+
+  .interestings, .fable {
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 390px;
+    height: 250px;
+    /*border: 2px solid black;*/
+  }
+
+  .imageoverlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 390px;
+    height: 198px;
+    background-color: rgba(181, 181, 181, 0.5);
+  }
+
   .icon {
     width: 30px;
   }
+
+  .icon:hover {
+    background-color: rgba(38, 40, 49, 0.5);
+    border-radius: 50%;
+  }
+
+
 }
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
 
-  .interstings {
+  .interestings {
     background-image: url('./media/interestings.png');
+  }
+
+  .fable {
+    background-image: url('./media/fableforum.png');
+  }
+
+  .interestings, .fable {
     background-repeat: no-repeat;
+    background-size: contain;
+    width: 488px;
+    height: 250px;
+    margin: 10px;
+  }
+
+  .imageoverlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 488px;
+    height: 250px;
+    background-color: rgba(181, 181, 181, 0.5);
+  }
+
+
+  .icon {
+    width: 40px;
+  }
+
+  .icon:hover {
+    background-color: rgba(38, 40, 49, 0.5);
+    border-radius: 50%;
   }
 
 }

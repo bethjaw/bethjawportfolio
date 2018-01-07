@@ -5,52 +5,46 @@
     <title>Hi, I'm Beth!</title>
     <link rel='stylesheet' href='main.css'>
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Spicy+Rice" rel="stylesheet">
     <meta name='viewport'
       content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
   </head>
   <body>
 
   <header class='header'>
-    <nav>
-      <ul>
-        <li class='navItem'>Home</li>
-        <li class='navItem'>Work</li>
-        <li class='navItem'>About</li>
-        <li class='navItem'>Contact</li>
-      </ul>
-    </nav>
-    <div class='namelogo'>
-      <img src='./media/namelogo.png'>
-    </div>
+      <h1 class='headname'>Beth Jaworski</h1>
+      <h3 class='subhead'>JAVASCRIPT DEVELOPER</h3>
   </header>
 
-<div class='main'>
 
-<div class='intro'>
-  <div class='logoDiv'>
-    <img class='logo' src='./media/logoHook.png'>
+<section class='main'>
+  <div class='intro'>
+    <div class='logoDiv'>
+      <img class='logo' src='./media/logoHook.png'>
+    </div>
+      <h2>Hi, I'm Beth. </br> I'm a JavaScript Developer </br>and Software Engineer.</h2>
   </div>
-    <h2>Hi, I'm Beth. </br> I'm a JavaScript Developer </br>and Software Engineer.</h2>
-</div>
 
-</div>
+  <div class='bio'>
+    <p>With a background in communication and marketing, I am inspired by people and their stories. I thrive in a team environment working to both solve problems and help others succeed. When not coding you’ll find me logged off taking full advantage of the Rocky Mountains.</p>
+  </div>
+</section>
 
-<div class="work">
 
-    <div class='interestings'>
+<h2 class='title'>Recent Projects</h2>
+<section class="work">
+  <div class='interestings'>
       <div class='imageoverlay'>
-        <p>Interestings</p>
-        <p>Bringing news and interesting content from across the web to one convenient app</p>
-        <div class='links'>
-          <a href='https://interestings-app.firebaseapp.com/' alt='launch app'>
-            <img class='icon description' src='./media/monitor.png'>
-          </a>
-          <a href='https://github.com/bethjaw/Q1-Interestings' alt='github'>
-            <img class='icon description' src='./media/github-logo.png'>
-          </a>
-        </div>
-        </div>
+          <p class='hide'>Interestings</p>
+          <p class='hide'>Bringing news and interesting content from across the web to one convenient app</p>
+          <div class='links'>
+            <a href='https://interestings-app.firebaseapp.com/' alt='launch app'><img class='icon description' src='./media/monitor.png'></a>
+            <a href='https://github.com/bethjaw/Q1-Interestings' alt='github'>
+              <img class='icon description' src='./media/github-logo.png'>
+            </a>
+          </div>
       </div>
+  </div>
 
 
     <div class='fable'>
@@ -58,9 +52,7 @@
         <p>Fable Forum</p>
         <p>A forum for writing, creating, inspirating and sharing short stories.</p>
         <div class='links'>
-          <a href='https://prosepros-fable.herokuapp.com/' alt='launch app'>
-            <img class='icon' src='./media/monitor.png'>
-          </a>
+          <a href='https://prosepros-fable.herokuapp.com/' alt='launch app'><img class='icon' src='./media/monitor.png'></a>
           <a href='https://github.com/Prose-Pros/fable' alt='github'>
             <img class='icon' src='./media/github-logo.png'>
           </a>
@@ -68,23 +60,38 @@
       </div>
     </div>
 
+</section>
 
-
-</div>
-
-<div class='contact'>
-  <p>Contact Info</p>
-
-  <div class='formDiv'>
-    <form class='contactForm'>
-      <label>Name</label>
-      <input type=text name='name'>
-      <label>Message</label>
-      <textarea type='text' name='message'></textarea>
-      <button>Get in Touch</button>
-    </form>
+<section class='work'>
+  <div class='roofstops'>
+    <div class='imageoverlay'>
+      <p>Roofstops</p>
+      <p>Find the nearest location to eat and imbibe on the roof!</p>
+      <div class='links'>
+        <a href='https://expo.io/@geebrown43/roofstops_dnvr' alt='launch app'><img class='icon' src='./media/smartphone.png'></a>
+        <a href='https://github.com/Roofstops/Roofstops' alt='github'>
+          <img class='icon' src='./media/github-logo.png'>
+        </a>
+      </div>
+    </div>
   </div>
-</div>
+</section>
+
+<section class='skills'>
+  <h2 class='title'>Skills</h2>
+  <p>HTML5 / CSS3 / JavaScript / Node.js / Express / Handlebars js / React / React Native / SQL / Postgres</p>
+  <p>Github / API Integration / Pair-Programming / Responsive Design / Agile</p>
+</section>
+
+
+<section class='contact'>
+  <h2 class='title'>Get In Touch</h2>
+  <p class='email'>hello@bethjaw.com</p>
+  <a href='https://github.com/bethjaw'><img class='icon' src='./media/github-logo.png'></a>
+  <a href='https://www.linkedin.com/in/bethjaw/'>
+    <img class='icon' src='./media/linkedin-logo-button.png'>
+  </a>
+</section>
 
 
 <footer class='footer'>

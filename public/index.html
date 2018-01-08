@@ -4,25 +4,28 @@
     <meta charset="utf-8">
     <title>Hi, I'm Beth!</title>
     <link rel='stylesheet' href='main.css'>
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Spicy+Rice" rel="stylesheet">
     <meta name='viewport'
       content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+
   </head>
   <body>
 
   <header class='header'>
+    <div class='logoDiv'>
+      <img class='logo' style="position: absolute; top: 0; left: 0; border: 0;" src='./media/logoHook.png'>
+    </div>
+    <div>
       <h1 class='headname'>Beth Jaworski</h1>
-      <h3 class='subhead'>JAVASCRIPT DEVELOPER</h3>
+      <!-- <h3 class='subhead'>JAVASCRIPT DEVELOPER</h3> -->
+    </div>
   </header>
 
 
 <section class='main'>
   <div class='intro'>
-    <div class='logoDiv'>
-      <img class='logo' src='./media/logoHook.png'>
-    </div>
-      <h2>Hi, I'm Beth. </br> I'm a JavaScript Developer </br>and Software Engineer.</h2>
+      <h2>Hi, I'm Beth. I'm a JavaScript Developer and Software Engineer.</h2>
   </div>
 
   <div class='bio'>
@@ -30,26 +33,44 @@
   </div>
 </section>
 
-
-<h2 class='title'>Recent Projects</h2>
 <section class="work">
-  <div class='interestings'>
-      <div class='imageoverlay'>
-          <p class='hide'>Interestings</p>
-          <p class='hide'>Bringing news and interesting content from across the web to one convenient app</p>
-          <div class='links'>
-            <a href='https://interestings-app.firebaseapp.com/' alt='launch app'><img class='icon description' src='./media/monitor.png'></a>
-            <a href='https://github.com/bethjaw/Q1-Interestings' alt='github'>
-              <img class='icon description' src='./media/github-logo.png'>
-            </a>
-          </div>
+  <h2 class='title'>Recent Projects</h2>
+  <div class=projects>
+
+    <div class='capstone'>
+      <img class='cap-image' src='./media/interestings-dark2.png'>
+      <div class='project-des'>
+        <p class='proj-name'>CAPSTONE</p>
+        <p>This is where my capstone will go!</p>
+        <div class='links'>
+          <a href='https://expo.io/@geebrown43/roofstops_dnvr' alt='launch app'><img class='icon' src='./media/smartphone.png'></a>
+          <a href='https://github.com/Roofstops/Roofstops' alt='github'>
+            <img class='icon' src='./media/github-logo.png'>
+          </a>
+        </div>
       </div>
-  </div>
+    </div>
+
+
+    <div class='interestings'>
+      <img class='interest-image' src='./media/interestings-dark2.png'>
+        <div class='project-des'>
+            <p class='proj-name'>Interestings</p>
+            <p>Bringing news and interesting content from across the web to one convenient app</p>
+            <div class='links'>
+              <a href='https://interestings-app.firebaseapp.com/' alt='launch app'><img class='icon description' src='./media/monitor.png'></a>
+              <a href='https://github.com/bethjaw/Q1-Interestings' alt='github'>
+                <img class='icon description' src='./media/github-logo.png'>
+              </a>
+            </div>
+        </div>
+    </div>
 
 
     <div class='fable'>
-      <div class='imageoverlay'>
-        <p>Fable Forum</p>
+      <img class='fable-image' src='./media/fable-light2.png'>
+      <div class='project-des'>
+        <p class='proj-name'>Fable Forum</p>
         <p>A forum for writing, creating, inspirating and sharing short stories.</p>
         <div class='links'>
           <a href='https://prosepros-fable.herokuapp.com/' alt='launch app'><img class='icon' src='./media/monitor.png'></a>
@@ -60,32 +81,34 @@
       </div>
     </div>
 
-</section>
-
-<section class='work'>
-  <div class='roofstops'>
-    <div class='imageoverlay'>
-      <p>Roofstops</p>
-      <p>Find the nearest location to eat and imbibe on the roof!</p>
-      <div class='links'>
-        <a href='https://expo.io/@geebrown43/roofstops_dnvr' alt='launch app'><img class='icon' src='./media/smartphone.png'></a>
-        <a href='https://github.com/Roofstops/Roofstops' alt='github'>
-          <img class='icon' src='./media/github-logo.png'>
-        </a>
+    <div class='roofstops'>
+      <img class='roof-image' src='./media/roofstops1.png'>
+      <div class='project-des'>
+        <p class='proj-name'>Roofstops</p>
+        <p>Search for the location nearest you to eat and imbibe on the roof!</p>
+        <div class='links'>
+          <a href='https://expo.io/@geebrown43/roofstops_dnvr' alt='launch app'><img class='icon' src='./media/smartphone.png'></a>
+          <a href='https://github.com/Roofstops/Roofstops' alt='github'>
+            <img class='icon' src='./media/github-logo.png'>
+          </a>
+        </div>
       </div>
     </div>
+
   </div>
 </section>
 
 <section class='skills'>
-  <h2 class='title'>Skills</h2>
-  <p>HTML5 / CSS3 / JavaScript / Node.js / Express / Handlebars js / React / React Native / SQL / Postgres</p>
-  <p>Github / API Integration / Pair-Programming / Responsive Design / Agile</p>
+  <div class='skillsback'>
+    <h2 class='title'>Skills</h2>
+    <p>[HTML5, CSS3, JavaScript, Node.js, Express, Handlebars js, React, React Native, SQL, Postgres]</p>
+    <p>[Github, API Integration, Pair-Programming, Responsive Design, Agile]</p>
+  </div>
 </section>
 
 
 <section class='contact'>
-  <h2 class='title'>Get In Touch</h2>
+  <h2 class='title'>Let's Chat!</h2>
   <p class='email'>hello@bethjaw.com</p>
   <a href='https://github.com/bethjaw'><img class='icon' src='./media/github-logo.png'></a>
   <a href='https://www.linkedin.com/in/bethjaw/'>
@@ -99,5 +122,6 @@
 </footer>
 
     <script src='app.js'></script>
+
   </body>
 </html>

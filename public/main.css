@@ -8,27 +8,31 @@ body {
   display: flex;
   flex-direction: column;
   font-family: 'Raleway', sans-serif;
+  /*background-color: #252730;*/
+}
+
+h2 {
+  font-weight: normal;
 }
 
 .header {
-  height: 400px;
+  height: 200px;
   width: 100vw;
-  /*background-color: #99CBC8; light blue*/
-  /*background-color: #252730; dark blue */
-  background-image: url('./media/bethjaw-header-dark.png');
-  /*background-image: url('./media/bethjaw-header-light.png');*/
-
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  /*flex-direction: row;*/
+  /*background-color: #99CBC8; light blue*/
+  /*background-color: #252730; dark blue */
+  /*background-image: url('./media/bethjaw-header-dark.png');*/
+
 }
 
 .headname {
   font-family: 'Spicy Rice', cursive;
-  font-size: 48px;
-  /*color: #252730;*/
-  color: #e2dedf;
+  font-size: 40px;
+  color: #252730;
+  /*color: #e2dedf;*/
 }
 
 .subhead {
@@ -36,68 +40,64 @@ body {
   color: #99CBC8;
 }
 
-.headericon {
-  width: 40px;
-  margin: 10px;
-}
-
-.icon-contain {
-  display: flex;
-  align-items: baseline;
-  padding: 20px;
-  border-bottom: 2px dashed black;
-}
-
-.iconholder {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  margin-top: 20px;
-}
-
-h2, .logoDiv {
-  padding-left: 30px;
-  padding-top: 50px;
+.logo{
+  padding: 50px;
 }
 
 .main{
+  height: 300px;
+  margin-bottom: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  /*background-image: url('./media/bethjaw-header-light.png');
+  border: 2px solid black; */
 }
 
 .intro {
-  height: 200px;
-  width: 50%;
   display: flex;
-  justify-content: flex-end;
-  padding-right: 30px;
+  justify-content: center;
+  padding-top: 20px;
+  /*background-color: rgba(255, 255, 255, 0.3);*/
 }
 
 .bio {
-  height: 200px;
-  width: 50%;
   display: flex;
-  justify-content: flex-start;
-  padding: 60px 120px 60px 30px;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  margin: 10px 40px 0 40px;
+  width: 800px;
+  /*background-color: rgba(255, 255, 255, 0.3);*/
 }
 
 .title {
   text-align: center;
   padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .work {
-  /*height: 400px;*/
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 800px;
 }
 
-.skills {
-  text-align: center;
+.projects {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: fit-content;
+}
+
+.capstone, .interestings, .fable, .roofstops {
+  display: flex;
+  flex-direction: row;
+  background-color: #FFF;
+  padding: 10px;
+  margin: 10px;
 }
 
 .contact {
@@ -128,35 +128,60 @@ h2, .logoDiv {
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
 
+  .headname {
+    padding-top: 100px;
+  }
+
+  .logo{
+    padding: 10px;
+  }
+
+  .intro {
+    text-align: center;
+    padding: 10px;
+    margin-left: 5px;
+  }
+
+  .bio {
+    width: 350px;
+  }
+
   .work {
     display: flex;
     flex-direction: column;
     justify-content: center;
  }
 
- .interestings {
-   background-image: url('./media/interestings-dark2.png');
+ .projects {
+   background-color: rgba(72, 70, 78, 0.2);
+   display: flex;
+   flex-wrap: wrap;
+   padding-bottom: 20px;
  }
 
- .fable {
-   background-image: url('./media/fable-light2.png');
- }
-
- .roofstops {
-   background-image: url('./media/roofstops1.png');
- }
-
- .interestings, .fable, .roofstops {
+ .interest-image, .fable-image, .roof-image {
    background-repeat: no-repeat;
    background-size: contain;
-   width: 350px;
-   height: 200px;
-   text-align: center;
-   margin-top: 10px;
-   /*border: 2px solid blue;*/
+   height: 250px;
+   margin: 10px 0 0 10px;
  }
 
- .imageoverlay {
+ .proj-name {
+   font-weight: bold;
+ }
+
+ .project-des {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   width: 375px;
+   margin-left: 10px;
+   background-color: #FFF;
+ }
+
+ /*.imageoverlay {
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -167,7 +192,7 @@ h2, .logoDiv {
    width: 300px;
    height: 200px;
    background-color: rgba(181, 181, 181, 0.5);
- }
+ }*/
 
 
   .icon {
@@ -187,31 +212,42 @@ h2, .logoDiv {
 
   .work {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
+
+  }
+
+  .projects {
+    background-color: rgba(72, 70, 78, 0.2);
+    display: flex;
     flex-wrap: wrap;
+    padding-bottom: 20px;
   }
 
-  .interestings {
-    background-image: url('./media/interestings-dark2.png');
-  }
-
-  .fable {
-    background-image: url('./media/fable-light2.png');
-  }
-
-  .roofstops {
-    background-image: url('./media/roofstops1.png');
-  }
-
-  .interestings, .fable, .roofstops {
+  .interest-image, .fable-image, .roof-image {
     background-repeat: no-repeat;
     background-size: contain;
-    width: 390px;
     height: 250px;
-    margin-top: 10px;
+    margin: 10px 0 0 10px;
   }
 
-  .imageoverlay {
+  .proj-name {
+    font-weight: bold;
+  }
+
+  .project-des {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 375px;
+    margin-left: 10px;
+    background-color: #FFF;
+  }
+
+  /*.imageoverlay {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -222,7 +258,7 @@ h2, .logoDiv {
     width: 376px;
     height: 250px;
     background-color: rgba(181, 181, 181, 0.5);
-  }
+  }*/
 
   .icon {
     width: 30px;
@@ -240,30 +276,36 @@ h2, .logoDiv {
 @media only screen and (min-width: 961px) {
 
   .work {
-    margin: 10px;
+    background-color: rgba(72, 70, 78, 0.1);
+    height: fit-content;
+    padding-bottom: 20px;
   }
 
-  .interestings {
-    background-image: url('./media/interestings-dark2.png');
-  }
-
-  .fable {
-    background-image: url('./media/fable-light2.png');
-  }
-
-  .roofstops {
-    background-image: url('./media/roofstops1.png');
-  }
-
-  .interestings, .fable, .roofstops {
+  .interest-image, .fable-image, .roof-image, .cap-image {
     background-repeat: no-repeat;
     background-size: contain;
-    width: 600px;
-    height: 400px;
-    margin: 10px;
+    height: 300px;
+    margin-left: 10px;
   }
 
-  .imageoverlay:hover {
+  .project-des {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 450px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    background-color: #FFF;
+    /*border: 2px solid black;*/
+  }
+
+  .proj-name {
+    font-weight: bold;
+  }
+
+  /*.imageoverlay:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -274,23 +316,26 @@ h2, .logoDiv {
     width: 600px;
     height: 400px;
     background-color: rgba(181, 181, 181, 0.8);
-  }
-
-  /*.hide {
-    visibility: hidden;
-  }
-
-  .hide:hover {
-    visibility: inherit;
   }*/
 
   .icon {
     width: 40px;
+    padding-top: 5px;
   }
 
   .icon:hover {
     background-color: rgba(38, 40, 49, 0.5);
     border-radius: 50%;
+  }
+
+  .skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /*background-image: url('./media/bethjaw-header-dark.png');*/
+    height: 180px;
+    font-size: 18px;
   }
 
 }

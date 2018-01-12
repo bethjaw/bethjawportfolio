@@ -21,22 +21,24 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   /*flex-direction: row;*/
   /*background-color: #99CBC8; light blue*/
   /*background-color: #252730; dark blue */
-
-
 }
 
 .headname {
-  font-family: 'Spicy Rice', cursive;
+  /*font-family: 'Spicy Rice', cursive;*/
+  font-family: 'Oswald', sans-serif;
   font-size: 40px;
   color: #252730;
   /*color: #e2dedf;*/
 }
 
 .subhead {
-  font-size: 22px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
   color: #99CBC8;
 }
 
@@ -59,6 +61,7 @@ h2 {
   display: flex;
   justify-content: center;
   padding-top: 20px;
+  font-family: 'Oswald', sans-serif;
   /*background-color: rgba(255, 255, 255, 0.3);*/
 }
 
@@ -66,6 +69,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   font-size: 16px;
   margin: 10px 40px 0 40px;
   width: 800px;
@@ -76,6 +80,8 @@ h2 {
   text-align: center;
   padding-bottom: 20px;
   padding-top: 20px;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
 }
 
 .work {
@@ -113,7 +119,8 @@ h2 {
   flex: 1 0 auto;
   /*background-color: #252730;*/
   background-image: url('./media/bethjaw-header-dark.png');
-  color: #99CBC8;
+  /*color: #99CBC8;*/
+  color: #EDEEEA;
   height: 200px;
   width: 100vw;
   padding-top: 10px;
@@ -277,7 +284,8 @@ h2 {
 @media only screen and (min-width: 961px) {
 
   .work {
-    background-color: rgba(72, 70, 78, 0.1);
+    /*background-color: rgba(72, 70, 78, 0.1);*/
+    background-color: #EDEEEA;
     height: fit-content;
     padding-bottom: 20px;
   }

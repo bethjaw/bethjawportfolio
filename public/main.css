@@ -22,58 +22,8 @@ h2 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  /*flex-direction: row;*/
   /*background-color: #99CBC8; light blue*/
   /*background-color: #252730; dark blue */
-}
-
-.headname {
-  /*font-family: 'Spicy Rice', cursive;*/
-  font-family: 'Oswald', sans-serif;
-  font-size: 40px;
-  color: #252730;
-  /*color: #e2dedf;*/
-}
-
-.subhead {
-  font-family: 'Oswald', sans-serif;
-  font-weight: 300;
-  font-size: 20px;
-  color: #99CBC8;
-}
-
-.logo{
-  padding: 50px;
-}
-
-.main{
-  height: 300px;
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  /*background-image: url('./media/bethjaw-header-light.png');
-  border: 2px solid black; */
-}
-
-.intro {
-  display: flex;
-  justify-content: center;
-  padding-top: 20px;
-  font-family: 'Oswald', sans-serif;
-  /*background-color: rgba(255, 255, 255, 0.3);*/
-}
-
-.bio {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 16px;
-  margin: 10px 40px 0 40px;
-  width: 800px;
-  /*background-color: rgba(255, 255, 255, 0.3);*/
 }
 
 .title {
@@ -84,8 +34,35 @@ h2 {
   font-family: 'Oswald', sans-serif;
 }
 
-.work {
-  height: 800px;
+.title2 {
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  font-size: 36px;
+}
+
+.main{
+  height: 300px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  font-family: 'Oswald', sans-serif;
+}
+
+.bio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 16px;
+  margin: 10px 40px 0 40px;
+  width: 800px;
 }
 
 .projects {
@@ -98,21 +75,54 @@ h2 {
   height: fit-content;
 }
 
-.capstone, .interestings, .fable, .roofstops {
+.skills {
   display: flex;
-  flex-direction: row;
-  background-color: #FFF;
-  padding: 10px;
-  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 180px;
+  font-size: 18px;
+  margin-bottom: 25px;
 }
 
 .contact {
   text-align: center;
   padding: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.headshot {
+  height: 300px;
+  border-radius: 50%;
+  padding-bottom: 10px;
+}
+
+.headshotDiv {
+  margin-right: 50px;
+}
+
+.resume {
+  text-decoration: none;
+  color: #82A684;
+  font-weight: bold;
 }
 
 .email {
-  margin-bottom: 10px;
+  margin: 10px;
+  width: 120px;
+  height: 40px;
+  background-color: #82A684;
+  font-size: 14px;
+  border-color: #82A684;
+  border-radius: 3px;
+  color: #EDEEEA
+}
+
+.email:hover {
+  background-color: #426151;
 }
 
 .footer {
@@ -144,6 +154,15 @@ h2 {
     padding: 10px;
   }
 
+  .title2 {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+  }
+
   .intro {
     text-align: center;
     padding: 10px;
@@ -167,11 +186,11 @@ h2 {
    padding-bottom: 20px;
  }
 
- .interest-image, .fable-image, .roof-image {
+ .interest-image, .fable-image, .roof-image, .cap-image {
    background-repeat: no-repeat;
    background-size: contain;
    height: 250px;
-   margin: 10px 0 0 10px;
+   margin: 10px 0 0 5px;
  }
 
  .proj-name {
@@ -185,26 +204,14 @@ h2 {
    align-items: center;
    text-align: center;
    width: 375px;
-   margin-left: 10px;
+   margin-left: 5px;
    background-color: #FFF;
  }
 
- /*.imageoverlay {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   text-align: center;
-   align-items: center;
-   padding-left: 10px;
-   padding-right: 10px;
-   width: 300px;
-   height: 200px;
-   background-color: rgba(181, 181, 181, 0.5);
- }*/
-
-
   .icon {
     width: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 
   .icon:hover {
@@ -212,28 +219,63 @@ h2 {
     border-radius: 50%;
   }
 
+  .contact {
+    text-align: center;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .headshot {
+    height: 300px;
+    border-radius: 50%;
+    padding-bottom: 10px;
+    margin-left: 50px;
+  }
 
 }
 
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
 
+  .title2 {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 26px;
+  }
+
+  .intro {
+    display: flex;
+    justify-content: center;
+    font-family: 'Oswald', sans-serif;
+  }
+
+  .bio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    margin: 10px 40px 0 40px;
+    width: 800px;
+  }
+
   .work {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-  }
-
-  .projects {
-    background-color: rgba(72, 70, 78, 0.2);
-    display: flex;
-    flex-wrap: wrap;
+    height: fit-content;
+    background-color: #EDEEEA;
     padding-bottom: 20px;
   }
 
-  .interest-image, .fable-image, .roof-image {
+  .cap-image, .interest-image, .fable-image, .roof-image {
     background-repeat: no-repeat;
     background-size: contain;
     height: 250px;
@@ -253,23 +295,13 @@ h2 {
     width: 375px;
     margin-left: 10px;
     background-color: #FFF;
+    padding: 5px;
   }
-
-  /*.imageoverlay {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    padding-left: 10px;
-    padding-right: 10px;
-    width: 376px;
-    height: 250px;
-    background-color: rgba(181, 181, 181, 0.5);
-  }*/
 
   .icon {
     width: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 
   .icon:hover {
@@ -277,17 +309,42 @@ h2 {
     border-radius: 50%;
   }
 
-
 }
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
 
+  .headname {
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    color: #252730;
+    /*color: #e2dedf;*/
+  }
+
+  .subhead {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: #99CBC8;
+  }
+
+  .logo{
+    padding: 50px;
+  }
+
   .work {
-    /*background-color: rgba(72, 70, 78, 0.1);*/
+    height: 800px;
     background-color: #EDEEEA;
     height: fit-content;
     padding-bottom: 20px;
+  }
+
+  .capstone, .interestings, .fable, .roofstops {
+    display: flex;
+    flex-direction: row;
+    background-color: #FFF;
+    padding: 10px;
+    margin: 10px;
   }
 
   .interest-image, .fable-image, .roof-image, .cap-image {
@@ -307,25 +364,11 @@ h2 {
     margin-left: 10px;
     margin-bottom: 10px;
     background-color: #FFF;
-    /*border: 2px solid black;*/
   }
 
   .proj-name {
     font-weight: bold;
   }
-
-  /*.imageoverlay:hover {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    padding-left: 10px;
-    padding-right: 10px;
-    width: 600px;
-    height: 400px;
-    background-color: rgba(181, 181, 181, 0.8);
-  }*/
 
   .icon {
     width: 40px;
@@ -337,14 +380,25 @@ h2 {
     border-radius: 50%;
   }
 
-  .skills {
+  .parallax {
+    /* The image used */
+    background-image: url("./media/IMG_9042.jpg");
+
+    /* Set a specific height */
+    min-height: 400px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;      background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .transparent {
+    background: rgba(238, 239, 235, 0.6);
+    height: 400px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    text-align: center;
-    /*background-image: url('./media/bethjaw-header-dark.png');*/
-    height: 180px;
-    font-size: 18px;
+    justify-content: center;
   }
 
 }

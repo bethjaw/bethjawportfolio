@@ -9,6 +9,7 @@ body {
   flex-direction: column;
   font-family: 'Raleway', sans-serif;
   /*background-color: #252730;*/
+  color: #252730;
 }
 
 h2 {
@@ -370,9 +371,14 @@ h2 {
     font-weight: bold;
   }
 
+  .descrip {
+    padding-bottom: 8px;
+    padding-top: 5px;
+  }
+
   .icon {
     width: 40px;
-    padding-top: 5px;
+    /*height: auto;*/
   }
 
   .icon:hover {
@@ -394,11 +400,24 @@ h2 {
   }
 
   .transparent {
-    background: rgba(238, 239, 235, 0.6);
+    background: rgba(238, 239, 235, 0.65);
     height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .parallax2 {
+    /* The image used */
+    background-image: url("./media/IMG_5895.jpg");
+
+    /* Set a specific height */
+    min-height: 400px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;      background-repeat: no-repeat;
+    background-size: cover;
   }
 
 }

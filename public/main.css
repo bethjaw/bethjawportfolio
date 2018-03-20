@@ -10,6 +10,7 @@ body {
   font-family: 'Raleway', sans-serif;
   /*background-color: #252730;*/
   color: #252730;
+  /*color: #000;*/
 }
 
 h2 {
@@ -409,7 +410,9 @@ h2 {
 
   .parallax2 {
     /* The image used */
-    background-image: url("./media/IMG_5895.jpg");
+    /*background-image: url("./media/IMG_5895.jpg");*/
+    background-image: url("./media/desk-flat2.JPG");
+
 
     /* Set a specific height */
     min-height: 400px;
